@@ -1,0 +1,13 @@
+﻿body {
+    
+    background-color:lightgray;
+}
+#submit_button{
+    margin:0.5em;
+}
+#mon, #tue, #wed, #thu, #fri, #sat, #sun{
+    margin:1em;
+}
+
+
+
