@@ -27,12 +27,14 @@ namespace Weekly_Calendar
                     string Sunday_Selection = Sunday.SelectedValue;
 
 
-                    // day of month and weekday counter
-                    
+                    // day of month and day of week counter
+
                     // loop to print date and day of the week
+                    schedule_summary.InnerHtml = "";
                     for (int i=1; i<32; i++)
                     {
-                        // date function from Rpetrusha. “How to: Extract the Day of the Week from a Specific Date.” Microsoft Docs, docs.microsoft.com/en-us/dotnet/standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.
+                        // date function from Rpetrusha. “How to: Extract the Day of the Week from a Specific Date.” Microsoft Docs,
+                        //docs.microsoft.com/en-us/dotnet/standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.
                         DateTime dateValue = new DateTime(2019, 10, i);
                         if ((dateValue.ToString("dddd")) == "Monday")
                         {
